@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Application - Clemz Clems School</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="md-loader.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Clemz Clems School</h1>
+    <nav>
+        <ul>
+            <li><a href="#apply">Apply</a></li>
+            <li><a href="results.md">Download Results</a></li>
+            <li><a href="https://paypal.me/clemzclems?country.x=AE&locale.x=en_US">Donate</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="apply">
+    <h2>Application Form</h2>
+    <form action="https://formspree.io/f/mwpvdgeo" method="POST" enctype="multipart/form-data">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Age:</label>
+        <input type="number" name="age" required>
+
+        <label>Tribe:</label>
+        <input type="text" name="tribe">
+
+        <label>Qualifications:</label>
+        <textarea name="qualifications" required></textarea>
+
+        <label>Results (PDF or Image, max 500KB):</label>
+        <input type="file" name="results" accept=".pdf, .jpg, .png" required>
+
+        <label>CV (PDF, max 1MB):</label>
+        <input type="file" name="cv" accept=".pdf">
+
+        <label>Passport Photograph (JPG, PNG, max 300KB):</label>
+        <input type="file" name="passport" accept=".jpg, .png" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Clemz Clems School. All Rights Reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
